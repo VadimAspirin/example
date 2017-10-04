@@ -1,0 +1,2 @@
+http://xdan.ru/uchimsya-parsit-saity-s-bibliotekoi-php-simple-html-dom-parser.html
+https://learn.javascript.ru/attributes-and-custom-properties
