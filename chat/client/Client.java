@@ -7,6 +7,8 @@ import java.util.Scanner;
 import java.util.logging.*;
 
 public class Client {
+	
+	private static Logger log = Logger.getLogger(Client.class.getName());
 
 	private static final int port = 8283;
 
@@ -44,13 +46,27 @@ public class Client {
 	public String GetMessages() {
 		try {
 			String str = in.readLine();
-			Main.Log.log(str);
+			log.log(str);
 			return str;
 		} catch (IOException e) {
 			System.err.println("Ошибка при получении сообщения.");
 			e.printStackTrace();
 			return null;
 		}
+	}
+	
+	private static void LoadLogger(){
+		try {
+		    LogManager.getLogManager().readConfiguration(
+			    Client.class.getResourceAsStream("/logging.properties"));
+		} catch (IOException e) {
+		    log.log(Level.SEVERE, "Не удалось создать лог. ", e);
+		}
+	    }
+	
+	public static void main(String[] args) {
+		LoadLogger();
+		new StartClientWindow();
 	}
 
 }
