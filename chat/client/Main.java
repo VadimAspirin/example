@@ -7,7 +7,7 @@ public class Main {
 	private static void LoadLogger(){
 		try {
 		    LogManager.getLogManager().readConfiguration(
-			    ChatServer.class.getResourceAsStream("/logging.properties"));
+			    Client.class.getResourceAsStream("/logging.properties"));
 		} catch (IOException e) {
 		    Log.log(Level.SEVERE, "Не удалось создать лог. ", e);
 		}
