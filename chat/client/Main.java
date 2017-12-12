@@ -4,7 +4,7 @@ public class Main {
 	
 	public static Logger Log = Logger.getLogger(Client.class.getName());
 	
-	private static void InitLoader(){
+	private static void LoadLogger(){
 		try {
 		    LogManager.getLogManager().readConfiguration(
 			    ChatServer.class.getResourceAsStream("/logging.properties"));
@@ -14,7 +14,7 @@ public class Main {
 	    }
 	
 	public static void main(String[] args) {
-		InitLoader();
+		LoadLogger();
 		new StartClientWindow();
 	}
 }
