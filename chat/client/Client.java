@@ -4,49 +4,42 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
+import java.util.logging.*;
 
 public class Client {
 
-	public static final int Port = 8283;
+	private static final int port = 8283;
+	
+	private static Logger log = Logger.getLogger(Client.class.getName());
 
 	private BufferedReader in;
 	private PrintWriter out;
 	private Socket socket;
 
-	public Client() {
-		Scanner scan = new Scanner(System.in);
-
-		System.out.println("Введите IP для подключения к серверу.");
-		System.out.println("Формат: xxx.xxx.xxx.xxx");
-
-		String ip = scan.nextLine();
-
+	public Client(String ip, String name) {
 		try {
-			socket = new Socket(ip, Port);
+			FileHandler fileLog = new FileHandler("ChatLog.txt", true);
+			ChatLogFormatter formatter = new ChatLogFormatter();
+			fileLog.setFormatter(formatter);
+			log.addHandler(fileLog);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		try {
+			socket = new Socket(ip, port);
 			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			out = new PrintWriter(socket.getOutputStream(), true);
-
-			System.out.println("Введите свой ник:");
-			out.println(scan.nextLine());
-
-			Resender resend = new Resender();
-			resend.start();
-
-			String str = "";
-			while (!str.equals("exit")) {
-				str = scan.nextLine();
-				out.println(str);
-			}
-			resend.setStop();
+			out.println(name);
+			
 		} catch (Exception e) {
 			e.printStackTrace();
-		} finally {
-			close();
 		}
 	}
-
-	private void close() {
+	
+	public void Close() {
 		try {
+			out.println("exit");
 			in.close();
 			out.close();
 			socket.close();
@@ -54,26 +47,20 @@ public class Client {
 			System.err.println("Потоки не были закрыты!");
 		}
 	}
+	
+	public void SendMessages(String mess) {
+		out.println(mess);
+	}
 
-	private class Resender extends Thread {
-
-		private boolean stoped;
-		
-		public void setStop() {
-			stoped = true;
-		}
-
-		@Override
-		public void run() {
-			try {
-				while (!stoped) {
-					String str = in.readLine();
-					System.out.println(str);
-				}
-			} catch (IOException e) {
-				System.err.println("Ошибка при получении сообщения.");
-				e.printStackTrace();
-			}
+	public String GetMessages() {
+		try {
+			String str = in.readLine();
+			log.info(str);
+			return str;
+		} catch (IOException e) {
+			System.err.println("Ошибка при получении сообщения.");
+			e.printStackTrace();
+			return null;
 		}
 	}
 

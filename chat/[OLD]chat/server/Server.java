@@ -8,15 +8,18 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.logging.*;
 
 public class Server {
 
 	public static final int Port = 8283;
+	private static Logger logger = Logger.getLogger(Server.class.getName());
 	
 	private List<Connection> connections = Collections.synchronizedList(new ArrayList<Connection>());
 	private ServerSocket server;
 
 	public Server() {
+		setupLogger();
 		try {
 			server = new ServerSocket(Port);
 
@@ -32,9 +35,26 @@ public class Server {
 
 			}
 		} catch (IOException e) {
+			logger.log(Level.SEVERE, "Exception: ", e);
 			e.printStackTrace();
 		} finally {
 			closeAll();
+		}
+	}
+	
+	private static void setupLogger() {
+		try {
+			FileHandler fh = new FileHandler("LogServer");
+			logger.addHandler(fh);
+			
+		} catch (SecurityException e) {
+			logger.log(Level.SEVERE,
+					"Не удалось создать файл лога из-за политики безопасности.", 
+					e);
+		} catch (IOException e) {
+			logger.log(Level.SEVERE,
+					"Не удалось создать файл лога из-за ошибки ввода-вывода.",
+					e);
 		}
 	}
 
@@ -49,6 +69,7 @@ public class Server {
 				}
 			}
 		} catch (Exception e) {
+			logger.log(Level.SEVERE, "Exception: ", e);
 			System.err.println("Потоки не были закрыты!");
 		}
 	}
@@ -70,6 +91,7 @@ public class Server {
 	
 			} catch (IOException e) {
 				e.printStackTrace();
+				logger.log(Level.SEVERE, "Exception: ", e);
 				close();
 			}
 		}
@@ -110,6 +132,7 @@ public class Server {
 					}
 				}
 			} catch (IOException e) {
+				logger.log(Level.SEVERE, "Exception: ", e);
 				e.printStackTrace();
 			} finally {
 				close();
@@ -128,6 +151,7 @@ public class Server {
 					System.exit(0);
 				}
 			} catch (Exception e) {
+				logger.log(Level.SEVERE, "Exception: ", e);
 				System.err.println("Потоки не были закрыты!");
 			}
 		}
