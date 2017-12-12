@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class Main {
 	
-	private static Logger log = Logger.getLogger(Client.class.getName());
+	public static Logger Log = Logger.getLogger(Client.class.getName());
 	
 	private static void InitLoader(){
 		try {
 		    LogManager.getLogManager().readConfiguration(
 			    ChatServer.class.getResourceAsStream("/logging.properties"));
 		} catch (IOException e) {
-		    log.log(Level.SEVERE, "Не удалось создать лог. ", e);
+		    Log.log(Level.SEVERE, "Не удалось создать лог. ", e);
 		}
 	    }
 	
