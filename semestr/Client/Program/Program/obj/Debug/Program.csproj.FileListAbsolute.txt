@@ -1,0 +1,68 @@
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\bin\Debug\Program.exe.config
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\bin\Debug\Program.exe
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\bin\Debug\Program.pdb
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\Program.csprojResolveAssemblyReference.cache
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\MainWindow.g.cs
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\App.g.cs
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\Program_MarkupCompile.cache
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\Program_MarkupCompile.lref
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\MainWindow.baml
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\Program.g.resources
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\Program.Properties.Resources.resources
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\Program.csproj.GenerateResource.Cache
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\Program.exe
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\Program.pdb
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\Admin.g.cs
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\Admin.baml
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\JournalMan.g.cs
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\JournalMan.baml
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\AddOffice.g.cs
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\AddPost.g.cs
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\AddWorker.g.cs
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\DelOffice.g.cs
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\DelPost.g.cs
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\DelWorker.g.cs
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\HR.g.cs
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\Storekeeper.g.cs
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\AddOffice.baml
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\AddPost.baml
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\AddWorker.baml
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\DelOffice.baml
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\DelPost.baml
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\DelWorker.baml
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\HR.baml
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\Storekeeper.baml
+c:\users\computer\documents\visual studio 2017\Projects\Program\Program\obj\Debug\JournalManWindow.g.cs
+C:\Users\Computer\Documents\Visual Studio 2017\Projects\Program\Program\obj\Debug\AddOfficeWindow.g.cs
+C:\Users\Computer\Documents\Visual Studio 2017\Projects\Program\Program\obj\Debug\AddPostWindow.g.cs
+C:\Users\Computer\Documents\Visual Studio 2017\Projects\Program\Program\obj\Debug\AddWorkerWindow.g.cs
+C:\Users\Computer\Documents\Visual Studio 2017\Projects\Program\Program\obj\Debug\AdminWindow.g.cs
+C:\Users\Computer\Documents\Visual Studio 2017\Projects\Program\Program\obj\Debug\DelOfficeWindow.g.cs
+C:\Users\Computer\Documents\Visual Studio 2017\Projects\Program\Program\obj\Debug\DelPostWindow.g.cs
+C:\Users\Computer\Documents\Visual Studio 2017\Projects\Program\Program\obj\Debug\DelWorkerWindow.g.cs
+C:\Users\Computer\Documents\Visual Studio 2017\Projects\Program\Program\obj\Debug\HRWindow.g.cs
+C:\Users\Computer\Documents\Visual Studio 2017\Projects\Program\Program\obj\Debug\StorekeeperWindow.g.cs
+E:\Влад\Program\Program\obj\Debug\Program.csprojResolveAssemblyReference.cache
+E:\Влад\Program\Program\obj\Debug\AdminWindow.g.cs
+E:\Влад\Program\Program\obj\Debug\CompletedWorkManWindow.g.cs
+E:\Влад\Program\Program\obj\Debug\HRWindow.g.cs
+E:\Влад\Program\Program\obj\Debug\JournalManWindow.g.cs
+E:\Влад\Program\Program\obj\Debug\MainWindow.g.cs
+E:\Влад\Program\Program\obj\Debug\StorekeeperWindow.g.cs
+E:\Влад\Program\Program\obj\Debug\App.g.cs
+E:\Влад\Program\Program\obj\Debug\Program_MarkupCompile.cache
+E:\Влад\Program\Program\obj\Debug\Program_MarkupCompile.lref
+E:\Влад\Program\Program\obj\Debug\Program.exe
+E:\Влад\Program\Program\obj\Debug\Program.pdb
+E:\Влад\Program\Program\bin\Debug\Program.exe.config
+E:\Влад\Program\Program\bin\Debug\Program.exe
+E:\Влад\Program\Program\bin\Debug\Program.pdb
+E:\Влад\Program\Program\obj\Debug\AdminWindow.baml
+E:\Влад\Program\Program\obj\Debug\CompletedWorkManWindow.baml
+E:\Влад\Program\Program\obj\Debug\HRWindow.baml
+E:\Влад\Program\Program\obj\Debug\JournalManWindow.baml
+E:\Влад\Program\Program\obj\Debug\MainWindow.baml
+E:\Влад\Program\Program\obj\Debug\StorekeeperWindow.baml
+E:\Влад\Program\Program\obj\Debug\Program.g.resources
+E:\Влад\Program\Program\obj\Debug\Program.Properties.Resources.resources
+E:\Влад\Program\Program\obj\Debug\Program.csproj.GenerateResource.Cache

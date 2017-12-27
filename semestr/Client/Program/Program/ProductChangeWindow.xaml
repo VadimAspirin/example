@@ -1,0 +1,20 @@
+﻿<Window x:Class="Program.ProductChangeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Program"
+        mc:Ignorable="d"
+        Name ="windowProductChange" Title="Изменение товара" Height="267.868" Width="500.115" ResizeMode="NoResize" Initialized="windowProductChange_Initialized">
+    <Grid>
+        <TextBox Name="textBoxProductName" HorizontalAlignment="Left" Height="22" Margin="129,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="353"/>
+        <TextBox Name="textBoxProductPrice" HorizontalAlignment="Left" Height="22" Margin="129,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="353"/>
+        <Label Content="Название товара:" HorizontalAlignment="Left" Margin="18,48,0,0" VerticalAlignment="Top"/>
+        <Label Content="Цена товара:" HorizontalAlignment="Left" Margin="42,88,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="comboBoxProductType" HorizontalAlignment="Left" Margin="129,132,0,0" VerticalAlignment="Top" Width="353" Height="22" ItemsSource="{Binding}"/>
+        <Label Content="Тип товара:" HorizontalAlignment="Left" Margin="47,128,0,0" VerticalAlignment="Top" Width="82"/>
+        <Button x:Name="buttonChangeProduct" Content="Изменить товар" HorizontalAlignment="Left" Height="46" Margin="179,169,0,0" VerticalAlignment="Top" Width="133" Click="buttonChangeProduct_Click"/>
+        <Label Content="Изменение товара" HorizontalAlignment="Left" Height="27" Margin="154,10,0,0" VerticalAlignment="Top" Width="147"/>
+
+    </Grid>
+</Window>

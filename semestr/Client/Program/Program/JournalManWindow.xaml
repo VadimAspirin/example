@@ -1,0 +1,24 @@
+﻿<Window x:Class="Program.JournalManWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Program"
+        mc:Ignorable="d"
+        Title="Ведение журнала" Height="454.913" Width="443.499" ResizeMode="NoResize">
+    <Grid>
+        <DatePicker Name="datePickerComing" HorizontalAlignment="Left" Margin="125,46,0,0" VerticalAlignment="Top" Width="300" Height="24" DisplayDate="2017-06-15" SelectedDateFormat="Short"/>
+        <ComboBox Name="comboBoxWorker" HorizontalAlignment="Left" Margin="125,84,0,0" VerticalAlignment="Top" Width="300" Height="22" ItemsSource="{Binding}" DisplayMemberPath="ФИО" SelectedValuePath="Идентификатор"/>
+        <Button Name="buttonOK" Content="OK" HorizontalAlignment="Left" Height="50" Margin="313,119,0,0" VerticalAlignment="Top" Width="112" Click="buttonOK_Click"/>
+        <Label Content="Работник:" HorizontalAlignment="Left" Margin="56,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Дата посещения:&#xD;&#xA;" HorizontalAlignment="Left" Margin="17,46,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.454,-1.213"/>
+        <Label Content="Добавить смену" HorizontalAlignment="Left" Margin="75,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.255,0.162"/>
+        <DataGrid Name="dataGridVisits" HorizontalAlignment="Left" Height="241" Margin="10,174,0,0" VerticalAlignment="Top" Width="415" IsReadOnly="True" ItemsSource="{Binding}" SelectionMode="Single"/>
+        <Button Name="buttonUpdate" HorizontalAlignment="Left" Height="50" Margin="10,119,0,0" VerticalAlignment="Top" Width="50" Click="buttonUpdate_Click">
+            <Grid>
+                <Image Grid.Row="0" Source="Resources/обновить.png"/>
+            </Grid>
+        </Button>
+
+    </Grid>
+</Window>
