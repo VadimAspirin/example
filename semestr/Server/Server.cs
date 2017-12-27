@@ -25,7 +25,7 @@ namespace Server
 		private Thread listeningThread;
 		private List<KeyValuePair<Socket, string>> clientsMessages;
 
-		public AsyncSocketListener(string host = "localhost", int port = 8080, int backlog = 100) 
+		public AsyncSocketListener(string host = "localhost", int port = 8888, int backlog = 100) 
 		{
 			this.host = host;
 			this.port = port;
@@ -43,7 +43,7 @@ namespace Server
 			IPAddress ipAddress = ipHostInfo.AddressList[0];
 			IPEndPoint localEndPoint = new IPEndPoint(ipAddress, port);
 			// Создаем сокет TCP/IP.
-			Socket listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+			Socket listener = new Socket(localEndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 			// Связывание сокета с локальной конечной точкой и прослушивание входящих соединений.
 			try 
 			{

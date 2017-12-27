@@ -19,9 +19,9 @@ namespace Server
 				}
 				Console.WriteLine("Сообщение клиента: {0}", inMess);
 				
-				//string dbLogin = "Database=autoshop;charset= utf8;Data Source=localhost;User Id=root;Password=";
+				string dbLogin = "Database=autoshop;charset= utf8;Data Source=localhost;User Id=root;Password=";
 				//string dbLogin = "Database=d81866z2_autosh;charset= utf8;Data Source=d81866z2.beget.tech;User Id=d81866z2_autosh;Password=gfhjkzytn7";
-				string dbLogin = "Database=q91935b4_autosh;charset= utf8;Data Source=q91935b4.beget.tech;User Id=q91935b4_autosh;Password=gfhjkzytn7";
+				//string dbLogin = "Database=q91935b4_autosh;charset= utf8;Data Source=q91935b4.beget.tech;User Id=q91935b4_autosh;Password=gfhjkzytn7";
 				string outMess = "";
 				if (inMess.Contains("select"))
 				{
@@ -61,7 +61,7 @@ namespace Server
 					}
 				}
 				
-				//Console.WriteLine("Ваш ответ: {0}", outMess);
+				Console.WriteLine("Ваш ответ: {0}", outMess);
 				server.SendMessage(outMess);
 			}
 

@@ -42,7 +42,7 @@ namespace Program
                 IPAddress ipAddress = ipHostInfo.AddressList[0];
                 IPEndPoint remoteEP = new IPEndPoint(ipAddress, port);
                 // Создаем сокет TCP/IP.
-                Socket client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                Socket client = new Socket(IPEndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
                 // Подключение к удаленной конечной точке.
                 client.BeginConnect(remoteEP, new AsyncCallback(connectCallback), client);
                 connectDone.WaitOne();
